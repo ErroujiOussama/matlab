@@ -1,0 +1,12 @@
+
+r=input("avez vous le code d'accès (Oui/Non)\n",'s');
+switch r
+    case "Oui"
+        sprintf('(%s) est bien vérifié',C);
+    case "Non"
+        disp('demander le code!');
+    otherwise 
+        disp('il faut repondre seulement par Oui ou Non');
+end
+
+

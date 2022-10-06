@@ -1,0 +1,71 @@
+-Les Opérateurs:
+.*:multiplication terme a terme dans les matrices meme chose pour ./
+^ :pour la puissance
+\ :division à gauche
+' :Transposée conjuguée 
+. ' :Transposée
+~= : Différent
+~  :(not)
+xor :ou exclusif
+
+-les fonctions:
+pour afficher tous les fonctions tapez: help elfun
+exemples:
+	pi :3,141592653589793
+	i, j :Nombre imaginaire
+	exp, log, log10 
+	sqrt , abs
+	sign Égale à 1 si 𝐱 > 𝟎 , 0 si 𝒙 = 𝟎 et -1 si 𝐱 < 𝟎
+
+les fonctions avec les nombres complexes:
+o conj(z) : conjugué de z
+o abs(z) : module de z
+o angle(z) : argument de z en radian
+o real(z) : partie réelle de z
+o imag(z) : partie imaginaire de z
+- les commentaires: %
+-Les vecteurs:
+concaténer deux vecteurs: V3=[V1 V2] ou V3=[V1;V2]
+ones(n,m)
+zeros(n,m)
+rand(n,m) des valeurs entre 1 et 0
+si on veut des valeurs entre a et b: a+(b-a).*rand(n,1)
+des informations sur la longueur d’un vecteur: length()
+linspace(x,y,n) génère un vecteur ligne de 𝒏 éléments espacés linéairement
+-des opération propres au vecteurs:
+o 𝒔𝒖𝒎(𝒙) : somme des éléments du vecteur x
+o 𝒑𝒓𝒐𝒅(𝒙) : produit des éléments du vecteur x
+o 𝒎𝒂𝒙(𝒙) : plus grand élément du vecteur x
+o 𝒎𝒊𝒏(𝒙) : plus petit élément du vecteur x
+o 𝒎𝒆𝒂𝒏(𝒙) : moyenne des éléments du vecteur 
+o 𝒔𝒐𝒓𝒕(𝒙) : ordonne les éléments du vecteur x par ordre croissant
+o 𝒇𝒍𝒊𝒑𝒍𝒓(𝒙) : renverse l’ordre des éléments du vecteur x
+-l'opérateur <<:>>: début ∶ pas ∶ fin
+-relever une valeur d'un vecteur :v(n)
+ *Les matrices:
+	size(M):retourne un vecteur ligne qui contient la taille [m,n] de M
+	numel(M):pour afficher le nombre des éléments de M
+	pour extraire une valeur: M(i,j)
+	diag(M): extraire le diag principale
+	diag(M,i):  extraire le ième sur diag
+       diag(M,-i): extraire le ième sous diag
+	l'indictation d'une matrice: 1 3 5
+                                    2 4 6
+	𝒆𝒚𝒆(𝒏) : la matrice identité (carrée de taille 𝒏)
+ 	𝒎𝒂𝒈𝒊𝒄(𝒏) : une matrice magique de dimension 𝒏 ( somme des éléments d’une ligne= somme des éléments d’une colonne 
+	𝒅𝒆𝒕(𝑨) : calcule le déterminant de 𝑨 (s’il existe)
+	𝒊𝒏𝒗(𝑨) : calcul l’inverse de la matrice 𝑨 (s’il existe)
+	𝒇𝒊𝒏𝒅(𝑴 < n): renvoie les numéros d’ordre de tous les éléments de 𝑀 inférieur à n
+		≫ 𝑧 =𝑓𝑖𝑛𝑑 (𝑀 < 5)
+		≫ 𝑀(𝑧)= 0
+		≫ k=𝑓𝑖𝑛𝑑( 𝐴 < 1)
+		≫ 𝐴 𝑘=𝐴 𝑘 + 1
+❑ 𝐬𝐮𝐦(𝑨, 𝟏) : calcul la somme des éléments de A le long des colonnes.
+❑ 𝐬𝐮𝐦(𝑨, 𝟐) : calcul la somme des éléments de A le long des ligne.
+❑ 𝐩𝐫𝐨𝐝(𝑨, 𝟏) : calcul le produit des éléments de A le long des colonnes.
+❑ 𝐩𝐫𝐨𝐝(𝑨, 𝟐) : calcul le produit des éléments de A le long des lignes.
+*𝒇𝒖𝒏𝒄𝒕𝒊𝒐𝒏 [𝑦1, … , 𝑦𝑛] = 𝑵𝒐𝒎_𝒅𝒆_𝒍𝒂_𝒇𝒐𝒏𝒄𝒕𝒊𝒐𝒏 (𝑥1 , … , 𝑥𝑚) inputs:x outputs:y
+
+
+
+

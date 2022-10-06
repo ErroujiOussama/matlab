@@ -1,0 +1,20 @@
+U=5;
+R1=150;
+R2=500;
+L=0.09;
+f=50;
+C=1;
+w=2*pi*f;
+%I1-I2-I3=0
+%R1*I1+1/(j*w)*I2=5
+%1/(j*w)*I2-(R2+j*L*w)*I3=0
+A=[1,-1,-1;R1,1/(w*1i),0;0,1/(1i*w),-R2-(1i*L*w)]
+B=[0;5;0]
+A
+format long
+X=A\B;
+X
+X=abs(X)
+X
+Xeff=X.*sqrt(2)
+Xpahse=angle(X)
