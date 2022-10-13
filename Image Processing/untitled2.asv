@@ -1,0 +1,15 @@
+clear all  clc
+while 
+m=input("donner le nombre de lignes: ");
+n=input("donner le nombre de collones: ");
+x=input("donner la valeur de x: ");
+for i=1:m
+    for j=1:n
+        if i==j
+            M(i,j)=x;
+        else
+            M(i,j)=i+j;
+        end 
+    end 
+end 
+M

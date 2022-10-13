@@ -1,0 +1,4 @@
+clear all, clc
+format double long
+f=@(n) (n^(-n))*((n+1)^n);
+fplot(f)
